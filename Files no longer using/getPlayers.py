@@ -103,4 +103,7 @@ Quater data isn't accurate. Has 5th quaters. Okay Q5 is OT
 
 Problem 6:
 Current CSV does not keep track of game score.
+
+Edge Cases I am missing:
+Player fumbles into forward into endzone and teamate falls on ball for TD.
 """

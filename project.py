@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 from collections import defaultdict
 import player as P
 import play as ply
@@ -29,8 +28,10 @@ def getPlayers():
         if p == "Amon-Ra St. Brown":
             #Specific edge case
             formatted = "A.ST."
+            name = ["Amon-Ra", "St. Brown"]
         elif p == "Jamaal Williams":
             formatted = "JA.WILLIAMS"
+            name = ["Jamaal", "Williams"]
         elif pos[i] not in ['QB', 'RB', 'WR', 'TE']: #don't care about defenses or kickers
             continue
         else:
@@ -117,23 +118,10 @@ def get_yards(play):
     return yards
 
 
-"""
-Need to get from every play
-    1. Offensive player's involved
-    2. yards   
-Types of plays:
-
-Edge Case: QB kneel yards not counted by my current version
-Edge Case: Stat corrections? may not come up in pbp
-Edge Case: Overturned plays. Espcially TD's. Need to take away TD and adjust yardage. Could be more problems here. Main issue is CSV data is wrong
-Edge Case: Penitlies. Yards after penilties and similar
-Edge Case: Fumbles who recovers and such
-"""
-
 def calc_stats():
     """
     This is the function that actually goes through the pbp (play by play) data and calculates player stats.
-    It goes through each play, each week and stores player stats in there respective player objects
+    It goes through each play, each week and stores player stats in there respective player objects.
 
     Parameters
     ---------
@@ -150,6 +138,7 @@ def calc_stats():
     global players
     players = getPlayers()
     week_dats = get_week_dates()
+    #Get pre parsed data from pbp data. 
     pbp = df["Description"]
     yards = df["Yards"]
     is_noplay = df["IsNoPlay"] #used to check if play happened
@@ -177,52 +166,43 @@ def calc_stats():
             continue
         elif isPass[i] and incomplete[i]: #no fantasy points skip for now
             continue
-        # elif (team[i] != "KC" or  team[i] != "ARI") or date[i] != "9/11/22": #limit data for intial testing purposes
-        #     continue
-        #else:
-        #elif (team[i] == "KC" or team[i] == "ARI") and date[i] == "9/11/22":
-        elif (isPass[i] and int[i]):
+        elif (isPass[i] and int[i]): #int
             play_data = get_players_from_pbp(pbp[i])
             if len(players[play_data[0]]) > 0:
                 players[play_data[0]][0].add_int(week) #QB who threw pick will be first player mentioned
-            # else:
-            #     print(play_data, pbp[i])
-        elif (two_point[i]):
+        elif (two_point[i]): #two point conversion
             players_in_play = get_players_from_pbp(pbp[i])
             for str in players_in_play:
                 if len(players[str]) > 0:
                     curr_player = players[str][0]
                     curr_player.add_two_point(week)
-        #elif (team[i] == "BUF"):
         else: #normal plays
             play = pbp[i]
-            if (week == 11 and team[i] == "KC" and "P.MAHOMES" in play):
-                print(play)
             yard = yards[i]
             reversed = False
             if "REVERSED" in play:
                 #special case. Ruled TD on the field and overturned ball at 1. Need to subtract yards and not count td
-                #play reveresed actual play should come after it
                 actual_play = play.find("REVERSED") + 10
                 play = play[actual_play:]
                 #need to update yards
                 yard = get_yards(play)
                 reversed = True
+            if "NULLIFIED" in play: #TD nullfied by penalty don't count
+                reversed = True
             end_of_offense_data = play.find("YARDS") + 5 #what about no gain. Does this even matter? May matter for receptiions.
-            if end_of_offense_data == 4:
+            if end_of_offense_data == 4: #play goes for 1 yard
                 end_of_offense_data = play.find("YARD") + 1
+            if "YARD" not in play and "NO GAIN" in play: #play goes for no gain
+                end_of_offense_data = play.find("NO GAIN") + 7 
             play = play[0:end_of_offense_data] #remove defensive information from play
             players_in_play = get_players_from_pbp(play)
             for str in players_in_play:
-                #strs = str.split('-')[-1] #get just player name
                 #checks to see if player listed. All players have same format "number-"
-                if len(players[str]) >= 1: #need to change to == 1 or just do check for all players
+                if len(players[str]) >= 1:
                     curr_player = players[str][0]
                     if (len(players[str]) > 1): #duplicate players
                         for j in range(0, len(players[str])):
                             curr_player = players[str][j]
-                            # if (curr_player.name == "J.WILLIAMS"):
-                            #     print(curr_player.team, team[i], len(players[str]))
                             if curr_player.team == team[i]:
                                 break
                     if (isPass[i]):
@@ -230,16 +210,16 @@ def calc_stats():
                             curr_player.add_yards(week, yard, "Pass")
                             type = "Pass"
                         else:
-                            # if (team[i] == "LAC" and week == 9):
-                            #     print(pbp[i])
                             curr_player.add_yards(week, yard, "Rec")
                             type = "Rec"
                     elif (rush[i]):
-                        #  if (str == "K.MURRAY"):
-                        #     print(play)
-                            curr_player.add_yards(week, yard, "Rush")
-                            type = "Rush"
-
+                        curr_player.add_yards(week, yard, "Rush")
+                        type = "Rush"
+                    elif (play_type[i] != "SACK"): #edge case for rush, but sheet doesn't count it as rush
+                        #print(pbp[i])
+                        yard = get_yards(play)
+                        curr_player.add_yards(week, yard, "Rush")
+                        type = "Rush"
                     if (td[i] and not reversed):
                         if (play.find("PASS") > play.find(str)):
                             curr_player.add_td(week, "Pass") 
@@ -253,9 +233,8 @@ def calc_stats():
                         else:
                             curr_player.add_fumble(week)
                 elif len(players[str]) == 0:
-                    #error case
+                    #Error, or defensive player accicdently captured. Do nothing
                     a = 5
-                    #print(str, old_str, pbp[i], team[i], date[i])
             
             is_td = td[i] and not reversed
             curr_play = ply.Play(week, yard, type, is_td, yard_line_start[i], quarter[i], minute[i], second[i], down[i], distance[i], first_down[i])
@@ -263,23 +242,19 @@ def calc_stats():
     return players
 
 
-#(6:17) 10-M.JONES PASS SHORT RIGHT TO 81-J.SMITH TO MIA 8 FOR 15 YARDS (55-J.BAKER; 94-C.WILKINS).
-#(10:42) (SHOTGUN) 1-T.TAGOVAILOA PASS SHORT LEFT INTENDED FOR 10-T.HILL INTERCEPTED BY 32-M.WILLIAMS AT BAL 20. 32-M.WILLIAMS TO BAL 20 FOR NO GAIN (10-T.HILL).
-#(13:38) (SHOTGUN) 8-L.JACKSON UP THE MIDDLE FOR 6 YARDS, TOUCHDOWN. THE REPLAY OFFICIAL REVIEWED THE RUNNER BROKE THE PLANE RULING, AND THE PLAY WAS REVERSED. (SHOTGUN) 8-L.JACKSON UP THE MIDDLE TO JAX 1 FOR 5 YARDS (5-A.CISCO, 44-T.WALKER).
-#(9:04) (SHOTGUN) 10-J.HERBERT PASS SHORT LEFT TO 30-A.EKELER FOR 37 YARDS, TOUCHDOWN. THE REPLAY OFFICIAL REVIEWED THE RUNNER WAS NOT DOWN BY CONTACT RULING, AND THE PLAY WAS REVERSED. (SHOTGUN) 10-J.HERBERT PASS SHORT LEFT TO 30-A.EKELER TO ATL 38 FOR -1 YARDS
-#TWO-POINT CONVERSION ATTEMPT. 1-M.MARIOTA PASS TO 5-D.LONDON IS COMPLETE. ATTEMPT SUCCEEDS.
-
-
-calc_stats()
-print(players["P.MAHOMES"][0].get_score(1))
-print(players["T.KELCE"][0].get_score(1))
-print(players["K.MURRAY"][0].get_score(1))
-print(players["J.ALLEN"][0].get_score(2))
-print(players["A.EKELER"][0].get_score(9))
-print(players["T.HILL"][0].get_score(1))
-print(players["J.FIELDS"][0].get_score(5))
-print(players["J.FIELDS"][0].get_score(8))
-print(players["J.HURTS"][0].get_score(9))
-print(players["P.MAHOMES"][0].get_score(11))
+#Local test cases on Project.py
+# calc_stats()
+# print(players["P.MAHOMES"][0].get_score(1))
+# print(players["T.KELCE"][0].get_score(1))
+# print(players["K.MURRAY"][0].get_score(1))
+# print(players["J.ALLEN"][0].get_score(2))
+# print(players["A.EKELER"][0].get_score(9))
+# print(players["T.HILL"][0].get_score(1))
+# print(players["J.FIELDS"][0].get_score(5))
+# print(players["J.FIELDS"][0].get_score(8))
+# print(players["J.HURTS"][0].get_score(9))
+# print(players["P.MAHOMES"][0].get_score(11))
+#print(players["D.HENRY"][0].get_score(4))
+# print(players["A.ST."][0].get_score(2))
         
 

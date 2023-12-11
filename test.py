@@ -1,6 +1,5 @@
 import unittest
 import pandas as pd
-import numpy as np
 import project as p
 
 
@@ -25,10 +24,6 @@ class TestProject(unittest.TestCase):
             error = "Week " + str(i) + " Expected: " + str(expected) + " Acutal" + str(actual)
             self.assertTrue((expected - 5) <= actual <= (expected + 5), error)
 
-        # print(results)
-        # print(type(results["1"]))
-        # print(type(results["1"][0]))
-
     def test_top_50(self):
         """
         Compares the score of the top 50 fantasy scorers on the season from my calculations to the actual values. 
@@ -36,7 +31,7 @@ class TestProject(unittest.TestCase):
         Gets the percentage that are correct and asserts false if the percent correct is too low. 
         """
         f_players = getFormatted()
-        bound = 2
+        bound = 1
         total = 0
         correct = 0
         for i in range(0, 50):
@@ -53,7 +48,8 @@ class TestProject(unittest.TestCase):
                 error = "Week " + str(j) + " " + player + " Expected: " + str(expected) + " Acutal " + str(actual)
                 total += 1
                 if not ((expected - bound) <= actual and actual <= (expected + bound)):
-                    print(error)
+                    #print(error)
+                    pass
                 else:
                     correct += 1
         correct_percent = correct / total
