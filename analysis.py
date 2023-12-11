@@ -13,8 +13,19 @@ players = project.calc_stats()
 def write_to_file(output, file="out.txt"):
     """
     Helper function to write the given dataframe to a file. out.txt is the default file
+
+    Parameters
+    ----------
+    Output : Pandas dataframe
+        This is a dataframe created in one of the calulating functions that will be written to the given input file
+    file : file
+        This is the file that the inputted dataframe will be written to. Default is out.txt
+
+    Returns
+    -------
+    None, but does write to a file. 
     """
-    with open('out.txt', 'w') as outfile:
+    with open(file, 'w') as outfile:
         output.to_string(outfile, output.columns)
 
 def most_effective_short_yard():
@@ -38,7 +49,6 @@ def most_effective_short_yard():
                     succ += 1
         if opps > 0:
             avg = succ / opps
-        print(opps, succ, avg)
         if (opps > 5):
             #counts[curr_player] = (succ, opps, avg)
             lst.append([curr_player, succ, opps, avg])
@@ -48,9 +58,7 @@ def most_effective_short_yard():
 
 
 def most_chances_inside_10():
-    """
-    Finds players who have had the most attemps inside the 10 yard line and calculates there scoring percentage. 
-    """
+    """ Finds players who have had the most attemps inside the 10 yard line and calculates there scoring percentage. """
     lst = []
     for name, pl in players.items():
         if len(pl) < 1:
@@ -75,9 +83,7 @@ def most_chances_inside_10():
     write_to_file(output)
 
 def most_touchdowns_in_Q4():
-    """
-    Gets Players who scored the most touchdowns in the 4th quarter throughout the season
-    """
+    """ Gets Players who scored the most touchdowns in the 4th quarter throughout the season. Writes output to out.txt"""
     lst = []
     for name, pl in players.items():
         if len(pl) < 1:
@@ -99,6 +105,21 @@ def most_touchdowns_in_Q4():
 
 
 def gained_most_firsts(week_start=1, week_end=14):
+    """
+    Gets players who have gained the most first downs in a range of weeks.
+    Assume range of weeks is in bounds. 
+
+    Parameters:
+    ----------
+    week_start : int
+        The start week. The default value is 1
+    week_end : int
+        The end week of the search range. The default value is 14.
+
+    Returns
+    -------
+    No returns, but it does print statistics out to out.txt. 
+    """
     lst = []
     for name, pl in players.items():
         if len(pl) < 1:
@@ -119,7 +140,19 @@ def gained_most_firsts(week_start=1, week_end=14):
 
 def point_per_first(week_start=1, week_end=14):
     """
-    Gets the highest scoring players if given a point for first down over the week range
+    Calculates fantasy scores for players over a week range if they were to receive a point per first down.
+    Assume range of weeks is in bounds. 
+
+    Parameters:
+    ----------
+    week_start : int
+        The start week. The default value is 1
+    week_end : int
+        The end week of the search range. The default value is 14.
+
+    Returns
+    -------
+    No returns, but it does print statistics out to out.txt. 
     """
     lst = []
     for name, pl in players.items():
@@ -148,10 +181,10 @@ def point_per_first(week_start=1, week_end=14):
 
 
 
-#most_effective_short_yard()
+most_effective_short_yard()
 #most_chances_inside_10()
 #most_touchdowns_in_Q4()
 #gained_most_firsts(1, 5)
-point_per_first()
+#point_per_first()
 
 

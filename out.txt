@@ -1,620 +1,90 @@
-                       Player Position  First Downs  Fantasy score normal  Score with point per first
-0                 Josh Jacobs       RB          169                283.10                      452.10
-1                 Jalen Hurts       QB          101                346.62                      447.62
-2                  Josh Allen       QB          100                331.12                      431.12
-3         Christian McCaffrey       RB          150                264.56                      414.56
-4               Austin Ekeler       RB          119                290.40                      409.40
-5            Justin Jefferson       WR          110                292.76                      402.76
-6             Patrick Mahomes       QB           65                333.78                      398.78
-7               Justin Fields       QB          116                274.46                      390.46
-8               Derrick Henry       RB          129                260.06                      389.06
-9                 Tyreek Hill       WR           99                284.00                      383.00
-10               Stefon Diggs       WR           90                277.90                      367.90
-11              Davante Adams       WR           83                278.20                      361.20
-12                 Nick Chubb       RB          135                225.30                      360.30
-13                 Joe Burrow       QB           53                301.60                      354.60
-14             Saquon Barkley       RB          126                220.20                      346.20
-15               Travis Kelce       TE           90                254.50                      344.50
-16               Tony Pollard       RB          121                216.40                      337.40
-17              Lamar Jackson       QB           75                247.78                      322.78
-18               Daniel Jones       QB           83                227.52                      310.52
-19              Miles Sanders       RB          112                197.30                      309.30
-20                 Geno Smith       QB           52                256.86                      308.86
-21        Rhamondre Stevenson       RB          104                204.50                      308.50
-22                Aaron Jones       RB          100                206.30                      306.30
-23                  Joe Mixon       RB          107                189.50                      296.50
-24                Dalvin Cook       RB          104                190.00                      294.00
-25                  Tom Brady       WR           80                206.80                      286.80
-26                 DK Metcalf       RB          106                179.90                      285.90
-27             Justin Herbert       QB           44                239.08                      283.08
-28                 A.J. Brown       WR           59                223.60                      282.60
-29          Leonard Fournette       RB          101                180.80                      281.80
-30                CeeDee Lamb       WR           69                210.70                      279.70
-31             Marcus Mariota       QB           79                198.56                      277.56
-32              Dameon Pierce       RB          109                165.40                      274.40
-33            Trevor Lawrence       QB           36                238.02                      274.02
-34              Jaylen Waddle       WR           74                194.80                      268.80
-35                Cooper Kupp       WR           69                198.80                      267.80
-36              Tyler Lockett       WR           61                206.50                      267.50
-37               Najee Harris       RB          102                159.96                      261.96
-38           Devin Singletary       RB          115                145.90                      260.90
-39               Alvin Kamara       RB           95                164.70                      259.70
-40                 DK Metcalf       WR           66                192.00                      258.00
-41              Ja'Marr Chase       WR           71                186.60                      257.60
-42               Kyler Murray       QB           47                209.60                      256.60
-43             Christian Kirk       WR           62                194.30                      256.30
-44               Kirk Cousins       QB           32                223.80                      255.80
-45            Jacoby Brissett       QB           79                174.52                      253.52
-46                 Jared Goff       QB           26                227.00                      253.00
-47               Amari Cooper       WR           63                189.40                      252.40
-48            Ezekiel Elliott       RB          101                145.90                      246.90
-49             Travis Etienne       RB           97                148.60                      245.60
-50             Terry McLaurin       WR           69                176.00                      245.00
-51              DeVonta Smith       WR           68                171.90                      239.90
-52             Antonio Gibson       RB           81                155.60                      236.60
-53              Aaron Rodgers       QB           34                202.18                      236.18
-54             Tua Tagovailoa       QB           20                215.16                      235.16
-55                 Derek Carr       QB           28                204.12                      232.12
-56                Tee Higgins       WR           56                175.10                      231.10
-57             Garrett Wilson       WR           59                171.00                      230.00
-58                Jeff Wilson       RB           93                136.80                      229.80
-59               James Conner       RB           84                143.70                      227.70
-60            Michael Pittman       WR           61                166.40                      227.40
-61            Jonathan Taylor       RB           83                142.10                      225.10
-62             Russell Wilson       QB           48                176.76                      224.76
-63                  Tom Brady       QB           18                205.74                      223.74
-64           David Montgomery       RB           90                133.20                      223.20
-65             Kenneth Walker       RB           73                148.40                      221.40
-66                 Mike Evans       WR           66                155.10                      221.10
-67              Brandon Aiyuk       WR           47                173.40                      220.40
-68                Chris Olave       WR           63                154.00                      217.00
-69              Curtis Samuel       WR           65                151.70                      216.70
-70                  AJ Dillon       RB           98                118.60                      216.60
-71               Deebo Samuel       WR           53                163.00                      216.00
-72               Mark Andrews       TE           58                156.60                      214.60
-73            DeAndre Hopkins       WR           75                137.90                      212.90
-74               Adam Thielen       WR           52                153.50                      205.50
-75               Chris Godwin       WR           51                154.10                      205.10
-76                  Zay Jones       WR           61                141.70                      202.70
-77             T.J. Hockenson       TE           46                155.70                      201.70
-78        JuJu Smith-Schuster       WR           49                152.30                      201.30
-79              D'Andre Swift       RB           69                132.10                      201.10
-80            Jimmy Garoppolo       QB           31                167.48                      198.48
-81              Joshua Palmer       WR           53                144.90                      197.90
-82            Diontae Johnson       WR           64                128.30                      192.30
-83             Ryan Tannehill       QB           28                162.54                      190.54
-84              Samaje Perine       RB           59                129.90                      188.90
-85             Raheem Mostert       RB           73                115.70                      188.70
-86                Kareem Hunt       RB           73                111.20                      184.20
-87                  Matt Ryan       QB           26                157.68                      183.68
-88                   DJ Moore       WR           48                135.50                      183.50
-89             Brian Robinson       RB           97                 86.50                      183.50
-90                 Gabe Davis       WR           38                143.60                      181.60
-91                 Tyler Boyd       WR           43                137.42                      180.42
-92               Allen Lazard       WR           42                136.40                      178.40
-93             Pat Freiermuth       TE           49                128.00                      177.00
-94                Jerry Jeudy       WR           41                134.80                      175.80
-95           Courtland Sutton       WR           47                127.30                      174.30
-96                Andy Dalton       QB           28                144.90                      172.90
-97             D'Onta Foreman       RB           75                 97.30                      172.30
-98               Mack Hollins       WR           43                128.76                      171.76
-99                Evan Engram       TE           36                133.80                      169.80
-100            Tyler Allgeier       RB           78                 91.10                      169.10
-101            George Pickens       WR           47                121.40                      168.40
-102            Dallas Goedert       TE           52                114.20                      166.20
-103            Marquise Brown       WR           40                125.30                      165.30
-104     Donovan Peoples-Jones       WR           36                129.10                      165.10
-105          Matthew Stafford       QB           41                123.30                      164.30
-106           Jerick McKinnon       RB           45                119.10                      164.10
-107             Mike Williams       WR           35                128.60                      163.60
-108            Khalil Herbert       RB           59                104.50                      163.50
-109     Cordarrelle Patterson       RB           62                101.10                      163.10
-110                 Mac Jones       QB           30                132.60                      162.60
-111          Christian Watson       WR           36                125.90                      161.90
-112             Jakobi Meyers       WR           39                122.80                      161.80
-113           Isaiah McKenzie       WR           50                110.90                      160.90
-114              Dak Prescott       QB           23                137.02                      160.02
-115             Kenny Pickett       QB           39                120.88                      159.88
-116              Drake London       WR           35                123.80                      158.80
-117           Parris Campbell       WR           36                120.80                      156.80
-118             Rachaad White       RB           48                107.10                      155.10
-119             George Kittle       TE           39                114.30                      153.30
-120               David Njoku       TE           35                115.40                      150.40
-121             Tyler Conklin       TE           48                102.30                      150.30
-122            Devin Duvernay       WR           46                104.20                      150.20
-123               Davis Mills       QB           20                128.84                      148.84
-124                 Cole Kmet       TE           42                106.60                      148.60
-125                 Zach Ertz       TE           34                114.20                      148.20
-126            Gerald Everett       TE           34                113.50                      147.50
-127             Isiah Pacheco       RB           56                 90.70                      146.70
-128            Darius Slayton       WR           38                107.80                      145.80
-129              Kenyan Drake       RB           58                 85.20                      143.20
-130             Brandin Cooks       WR           40                102.70                      142.70
-131            DeAndre Carter       WR           40                102.10                      142.10
-132              Eno Benjamin       RB           57                 84.70                      141.70
-133            James Robinson       RB           54                 86.60                      140.60
-134              Hayden Hurst       TE           40                 99.00                      139.00
-135     Clyde Edwards-Helaire       RB           41                 97.30                      138.30
-136           Latavius Murray       RB           44                 94.10                      138.10
-137            Darnell Mooney       WR           36                101.50                      137.50
-138             Melvin Gordon       RB           49                 88.50                      137.50
-139  Marquez Valdes-Scantling       WR           36                100.30                      136.30
-140              Tyler Higbee       TE           38                 97.50                      135.50
-141            Chase Claypool       WR           33                100.24                      133.24
-142             Juwan Johnson       TE           36                 95.90                      131.90
-143            Dalton Schultz       TE           28                100.10                      128.10
-144             Damien Harris       RB           50                 76.80                      126.80
-145             Josh Reynolds       WR           31                 94.70                      125.70
-146              Nico Collins       WR           28                 97.10                      125.10
-147               Zach Wilson       QB           41                 83.56                      124.56
-148               Alec Pierce       WR           32                 90.60                      122.60
-149             Rondale Moore       WR           34                 87.90                      121.90
-150               Dawson Knox       TE           30                 91.80                      121.80
-151              Robert Woods       WR           37                 84.60                      121.60
-152         Olamide Zaccheaus       WR           32                 89.30                      121.30
-153              Richie James       WR           26                 92.70                      118.70
-154              Carson Wentz       QB           15                103.68                      118.68
-155               Will Dissly       TE           36                 81.70                      117.70
-156             Ben Skowronek       WR           36                 81.00                      117.00
-157             Robert Tonyan       TE           30                 86.20                      116.20
-158              Keenan Allen       WR           35                 80.90                      115.90
-159            Baker Mayfield       QB           20                 95.46                      115.46
-160               Chris Moore       WR           30                 85.00                      115.00
-161               Corey Davis       WR           30                 84.00                      114.00
-162            Mecole Hardman       WR           19                 93.80                      112.80
-163                 Noah Fant       TE           25                 87.20                      112.20
-164                Noah Brown       WR           26                 86.00                      112.00
-165             Austin Hooper       TE           33                 78.70                      111.70
-166           Taylor Heinicke       QB           15                 96.16                      111.16
-167         Demarcus Robinson       WR           27                 83.00                      110.00
-168                Cade Otton       TE           28                 81.70                      109.70
-169         Darrell Henderson       RB           36                 73.50                      109.50
-170               K.J. Osborn       WR           25                 83.60                      108.60
-171              Hunter Henry       TE           28                 80.60                      108.60
-172          Marquise Goodwin       WR           21                 87.20                      108.20
-173               Romeo Doubs       WR           27                 80.60                      107.60
-174                James Cook       RB           39                 68.50                      107.50
-175            DeVante Parker       WR           29                 77.00                      106.00
-176                 Cam Akers       RB           40                 64.70                      104.70
-177               Greg Dortch       WR           26                 77.90                      103.90
-178            Michael Gallup       WR           23                 79.70                      102.70
-179     Nick Westbrook-Ikhine       WR           25                 77.00                      102.00
-180                Kyle Pitts       TE           27                 74.60                      101.60
-181         Dontrell Hilliard       RB           22                 77.20                       99.20
-182             Foster Moreau       TE           31                 67.60                       98.60
-183           Trent Sherfield       WR           24                 74.20                       98.20
-184          Kenneth Gainwell       RB           33                 64.80                       97.80
-185            Jauan Jennings       WR           34                 63.80                       97.80
-186            Nelson Agholor       WR           25                 72.60                       97.60
-187              Mike Gesicki       TE           21                 74.90                       95.90
-188             Kalif Raymond       WR           25                 70.40                       95.40
-189              Elijah Moore       WR           26                 69.30                       95.30
-190             Chuba Hubbard       RB           36                 58.54                       94.54
-191             Jaylen Warren       RB           39                 55.30                       94.30
-192              Jordan Akins       TE           25                 67.10                       92.10
-193              Russell Gage       WR           22                 70.00                       92.00
-194              Greg Dulcich       TE           20                 70.90                       90.90
-195             Treylon Burks       WR           22                 68.10                       90.10
-196              Rex Burkhead       RB           29                 59.90                       88.90
-197              Jahan Dotson       WR           16                 72.60                       88.60
-198         Chigoziem Okonkwo       TE           20                 66.60                       86.60
-199               Julio Jones       WR           20                 66.00                       86.00
-200            Mitch Trubisky       QB           17                 68.62                       85.62
-201             J.D. McKissic       RB           29                 55.80                       84.80
-202              Randall Cobb       WR           22                 62.50                       84.50
-203        Alexander Mattison       RB           24                 60.10                       84.10
-204          Daniel Bellinger       TE           22                 61.70                       83.70
-205                  DJ Chark       WR           16                 66.70                       82.70
-206           Braxton Berrios       WR           31                 50.88                       81.88
-207                 Noah Gray       TE           24                 57.50                       81.50
-208              Quez Watkins       WR           14                 66.70                       80.70
-209             Rashaad Penny       RB           30                 50.20                       80.20
-210             Chase Edmonds       RB           29                 51.10                       80.10
-211              J.K. Dobbins       RB           27                 52.20                       79.20
-212               Gus Edwards       RB           37                 42.10                       79.10
-213          Terrace Marshall       WR           19                 59.60                       78.60
-214             Kylen Granson       TE           24                 54.40                       78.40
-215            Kendall Hinton       WR           23                 55.40                       78.40
-216             Jarvis Landry       WR           18                 60.20                       78.20
-217              Nyheim Hines       RB           19                 58.40                       77.40
-218             Isaiah Likely       TE           18                 57.60                       75.60
-219            Isaiah Hodgins       WR           18                 56.60                       74.60
-220           Harrison Bryant       TE           23                 50.10                       73.10
-221               Jamal Agnew       WR           16                 56.50                       72.50
-222                Joe Flacco       QB           29                 43.34                       72.34
-223            Michael Thomas       WR           21                 51.10                       72.10
-224            Zonovan Knight       RB           26                 46.00                       72.00
-225               Mark Ingram       RB           22                 50.00                       72.00
-226          Laviska Shenault       WR           13                 58.30                       71.30
-227           Equanimeous St.       WR           21                 50.20                       71.20
-228             Kyle Juszczyk       RB           23                 47.80                       70.80
-229              Jelani Woods       TE           16                 54.50                       70.50
-230            Tre'Quan Smith       WR           19                 51.20                       70.20
-231             Caleb Huntley       RB           25                 44.80                       69.80
-232               Cooper Rush       QB            8                 61.14                       69.14
-233           Kendrick Bourne       WR           19                 49.90                       68.90
-234         Wan'Dale Robinson       WR           15                 51.60                       66.60
-235             Joshua Kelley       RB           26                 40.50                       66.50
-236              Logan Thomas       TE           15                 50.00                       65.00
-237          Javonte Williams       RB           23                 41.80                       64.80
-238            Rashid Shaheed       WR           13                 51.50                       64.50
-239                 Irv Smith       TE           16                 48.50                       64.50
-240             JaMycal Hasty       RB           17                 46.30                       63.30
-241            Rashod Bateman       WR           12                 51.10                       63.10
-242             Van Jefferson       WR           14                 49.00                       63.00
-243           Tyquan Thornton       WR           18                 44.10                       62.10
-244              Dante Pettis       WR           12                 49.90                       61.90
-245               Tutu Atwell       WR           17                 44.40                       61.40
-246            Justin Jackson       RB           16                 44.80                       60.80
-247          Marquez Callaway       WR           22                 37.80                       59.80
-248              Justice Hill       RB           25                 34.50                       59.50
-249                Skyy Moore       WR           16                 42.40                       58.40
-250              Damiere Byrd       WR           11                 46.10                       57.10
-251              Travis Homer       RB           19                 38.10                       57.10
-252            Hunter Renfrow       WR           20                 37.00                       57.00
-253             Trenton Irwin       WR           16                 40.00                       56.00
-254               Matt Breida       RB           19                 35.80                       54.80
-255               Mo Alie-Cox       TE            9                 45.70                       54.70
-256           Colby Parkinson       TE           14                 40.40                       54.40
-257              Scott Miller       WR           14                 39.50                       53.50
-258              Boston Scott       RB           19                 34.20                       53.20
-259           Ray-Ray McCloud       WR           16                 37.20                       53.20
-260            Jameis Winston       QB            4                 48.66                       52.66
-261                 Shi Smith       WR           13                 39.10                       52.10
-262                Mike White       QB            5                 47.08                       52.08
-263            Ameer Abdullah       RB           10                 42.00                       52.00
-264           Phillip Dorsett       WR           12                 39.80                       51.80
-265           Elijah Mitchell       RB           17                 34.20                       51.20
-266                A.J. Green       WR           12                 38.80                       50.80
-267            Brandon Powell       WR           15                 35.80                       50.80
-268               Zach Pascal       WR           16                 34.40                       50.40
-269              Bailey Zappe       QB            5                 45.00                       50.00
-270               Brock Purdy       QB           10                 39.54                       49.54
-271               P.J. Walker       QB            6                 43.52                       49.52
-272             Darren Waller       TE           10                 39.50                       49.50
-273             Jake Ferguson       TE           10                 39.50                       49.50
-274             Adam Trautman       TE           10                 39.30                       49.30
-275                Ian Thomas       TE           12                 36.60                       48.60
-276         Raheem Blackshear       RB           14                 34.50                       48.50
-277              Ashton Dulin       WR           11                 37.50                       48.50
-278               Alec Ingold       RB           13                 35.40                       48.40
-279              Brock Wright       TE           15                 33.10                       48.10
-280            KhaDarel Hodge       WR            8                 39.70                       47.70
-281                Ty Johnson       RB           13                 32.70                       45.70
-282             Sammy Watkins       WR           12                 33.60                       45.60
-283               Josh Oliver       TE            9                 36.00                       45.00
-284            Craig Reynolds       RB           14                 30.80                       44.80
-285              Johnny Mundt       TE           12                 32.70                       44.70
-286                Colt McCoy       QB            9                 35.54                       44.54
-287            Kyren Williams       RB           18                 26.10                       44.10
-288             Cameron Brate       TE           13                 30.90                       43.90
-289                Mike Boone       RB           15                 28.80                       43.80
-290         Peyton Hendershot       TE           13                 30.50                       43.50
-291          Sterling Shepard       WR            9                 34.40                       43.40
-292           Dare Ogunbowale       RB           14                 29.20                       43.20
-293             Tommy Tremble       TE           10                 33.10                       43.10
-294               Zach Gentry       TE           15                 26.40                       41.40
-295               O.J. Howard       TE            9                 31.90                       40.90
-296            River Cracraft       WR           11                 29.70                       40.70
-297                Jack Stoll       TE           19                 21.70                       40.70
-298               Sony Michel       RB           15                 24.90                       39.90
-299              Jody Fortson       TE            8                 31.80                       39.80
-300               Malik Davis       RB           13                 25.80                       38.80
-301             DeeJay Dallas       RB           17                 21.60                       38.60
-302               Dyami Brown       WR            7                 31.30                       38.30
-303               Sam Darnold       QB            3                 34.86                       37.86
-304             Khalil Shakir       WR           11                 26.80                       37.80
-305               C.J. Uzomah       TE            9                 28.70                       37.70
-306            Deshaun Watson       QB           12                 25.58                       37.58
-307               Denzel Mims       WR           10                 27.30                       37.30
-308             Tanner Hudson       TE           14                 23.20                       37.20
-309             MyCole Pruitt       TE            7                 29.70                       36.70
-310             Tyler Huntley       QB           13                 23.34                       36.34
-311                John Bates       TE            7                 29.10                       36.10
-312         Teddy Bridgewater       QB            4                 31.98                       35.98
-313             Durham Smythe       TE            7                 28.60                       35.60
-314              Eric Saubert       TE            7                 28.30                       35.30
-315              Jordan Mason       RB           20                 15.30                       35.30
-316                 KJ Hamler       WR            8                 25.80                       33.80
-317            Brandon Bolden       RB           11                 22.10                       33.10
-318                 Zack Moss       RB           13                 20.10                       33.10
-319               Steven Sims       WR           15                 17.80                       32.80
-320             Bryce Perkins       QB           15                 17.74                       32.74
-321            Kadarius Toney       WR            6                 26.50                       32.50
-322            Cedrick Wilson       WR            9                 23.30                       32.30
-323            Avery Williams       RB            7                 24.80                       31.80
-324              Jalen Reagor       WR            8                 23.20                       31.20
-325               Tom Kennedy       WR            9                 22.10                       31.10
-326             Tevin Coleman       RB            9                 22.00                       31.00
-327           Gary Brightwell       RB           10                 20.90                       30.90
-328               David Sills       WR           10                 20.60                       30.60
-329             Pharaoh Brown       TE            6                 23.70                       29.70
-330             Chris Myarick       TE           10                 19.50                       29.50
-331              John Wolford       QB           13                 15.90                       28.90
-332          Anthony Schwartz       WR           10                 18.60                       28.60
-333                  Ko Kieft       TE            7                 21.00                       28.00
-334           Keaontay Ingram       RB           12                 16.00                       28.00
-335                Dan Arnold       TE            8                 19.80                       27.80
-336            Josiah Deguara       TE            6                 21.60                       27.60
-337           Phillip Lindsay       RB           12                 14.80                       26.80
-338             Brevin Jordan       TE            9                 17.80                       26.80
-339               Keelan Cole       WR           10                 15.60                       25.60
-340            Zander Horvath       RB            8                 17.60                       25.60
-341              Ross Dwelley       TE            6                 19.50                       25.50
-342                Trey Lance       QB           12                 13.46                       25.46
-343          Breshad Perriman       WR            6                 19.00                       25.00
-344            Patrick Ricard       RB            6                 19.00                       25.00
-345             Michael Bandy       WR            6                 18.90                       24.90
-346              Dee Eskridge       WR           11                 13.80                       24.80
-347            Reggie Gilliam       RB            6                 18.70                       24.70
-348               Benny Snell       RB            6                 18.70                       24.70
-349             Pierre Strong       RB            7                 17.50                       24.50
-350              N'Keal Harry       WR            4                 20.30                       24.30
-351              Trey McBride       TE            4                 19.30                       23.30
-352              Tyrod Taylor       QB           11                 12.22                       23.22
-353              Samori Toure       WR            4                 19.20                       23.20
-354               Geoff Swaim       TE            3                 20.00                       23.00
-355            Quintin Morris       TE           10                 13.00                       23.00
-356               Marlon Mack       RB            3                 19.80                       22.80
-357              Parker Hesse       TE            8                 14.50                       22.50
-358            James Mitchell       TE            6                 15.80                       21.80
-359              Kyle Philips       WR            6                 15.80                       21.80
-360              Sam Ehlinger       QB            7                 14.66                       21.66
-361               Velus Jones       WR            5                 16.20                       21.20
-362             Byron Pringle       WR            4                 16.70                       20.70
-363                Derek Watt       RB            7                 13.60                       20.60
-364           Mitchell Wilcox       TE            5                 15.00                       20.00
-365              Malik Willis       QB           10                  9.98                       19.98
-366             Armani Rogers       TE            6                 13.80                       19.80
-367                 Dax Milne       WR            4                 15.70                       19.70
-368             Shane Zylstra       TE            7                 12.30                       19.30
-369                  Cam Sims       WR            5                 14.30                       19.30
-370              James Proche       WR            6                 13.20                       19.20
-371           Anthony Firkser       TE            5                 13.90                       18.90
-372              Jalen Virgil       WR            3                 15.50                       18.50
-373              Myles Gaskin       RB            9                  9.40                       18.40
-374               Zamir White       RB           12                  6.20                       18.20
-375          Grant Calcaterra       TE            5                 13.10                       18.10
-376            Lawrence Cager       WR            3                 14.90                       17.90
-377                  C.J. Ham       RB            4                 13.60                       17.60
-378              Jake Kumerow       WR            7                 10.40                       17.40
-379             Trestan Ebner       RB           15                  2.00                       17.00
-380          Gunner Olszewski       WR            5                 11.90                       16.90
-381            Giovanni Ricci       TE            3                 13.80                       16.80
-382            Marcedes Lewis       TE            3                 13.00                       16.00
-383           Jamison Crowder       WR            4                 12.00                       16.00
-384           Darrynton Evans       RB            7                  9.00                       16.00
-385            Eric Tomlinson       TE            6                  9.80                       15.80
-386              Jeff Driskel       QB            5                 10.62                       15.62
-387            Marcus Johnson       WR            3                 12.30                       15.30
-388        Albert Okwuegbunam       TE            3                 12.00                       15.00
-389               Chris Evans       RB            2                 12.80                       14.80
-390              Brett Rypien       QB            2                 12.54                       14.54
-391              Tre' McKitty       TE            1                 13.40                       14.40
-392             Spencer Brown       RB            7                  7.30                       14.30
-393              Trevon Wesco       TE            7                  6.60                       13.60
-394            Trevor Siemian       QB            2                 11.22                       13.22
-395         Teagan Quitoriano       TE            2                 11.20                       13.20
-396             Ronnie Rivers       RB            3                 10.00                       13.00
-397             Mike Strachan       WR            3                  8.90                       11.90
-398            Jordan Wilkins       RB            4                  7.60                       11.60
-399               Jordan Love       QB            0                 11.44                       11.44
-400               Kevin White       WR            2                  9.40                       11.40
-401            Cody Hollister       WR            3                  8.40                       11.40
-402            Isaiah Spiller       RB            3                  8.40                       11.40
-403             Donald Parham       TE            3                  8.30                       11.30
-404             Ty Montgomery       RB            1                 10.30                       11.30
-405            Chris Manhertz       TE            2                  9.20                       11.20
-406           Brandon Johnson       WR            1                 10.20                       11.20
-407            Kenny Golladay       WR            2                  9.10                       11.10
-408         Anthony McFarland       RB            5                  6.10                       11.10
-409              Kevin Harris       RB            2                  9.00                       11.00
-410         Trayveon Williams       RB            3                  8.00                       11.00
-411            Hassan Haskins       RB            4                  6.90                       10.90
-412               Andrew Beck       TE            2                  8.80                       10.80
-413              Jalen Guyton       WR            2                  8.40                       10.40
-414           Andre Baccellia       WR            2                  8.20                       10.20
-415           Skylar Thompson       QB            1                  8.60                        9.60
-416          Stephen Sullivan       TE            3                  6.60                        9.60
-417         Dwayne Washington       RB            4                  5.50                        9.50
-418       Montrell Washington       WR            1                  8.20                        9.20
-419           Julius Chestnut       RB            5                  4.10                        9.10
-420              Luke Farrell       TE            3                  5.90                        8.90
-421        Tyrion Davis-Price       RB            5                  3.70                        8.70
-422               Tyler Davis       TE            2                  6.60                        8.60
-423               Simi Fehoko       WR            3                  5.40                        8.40
-424           Ke'Shawn Vaughn       RB            4                  4.20                        8.20
-425            Brycen Hopkins       TE            2                  6.10                        8.10
-426               Tyler Kroft       TE            2                  5.90                        7.90
-427              Jalen Nailor       WR            3                  4.80                        7.80
-428              Ben Ellefson       TE            2                  5.60                        7.60
-429              Ronald Jones       RB            3                  4.40                        7.40
-430              Ryan Griffin       TE            2                  5.40                        7.40
-431           Austin Trammell       WR            4                  3.30                        7.30
-432             Andy Isabella       WR            3                  4.10                        7.10
-433             Corey Clement       RB            2                  4.90                        6.90
-434             Jaelon Darden       WR            2                  4.80                        6.80
-435            Keith Kirkwood       WR            3                  3.80                        6.80
-436            Michael Burton       RB            3                  3.80                        6.80
-437              Cole Beasley       WR            1                  5.70                        6.70
-438              Stone Smartt       TE            1                  5.70                        6.70
-439           Kendall Blanton       TE            1                  5.50                        6.50
-440            Quintez Cephus       WR            3                  3.50                        6.50
-441            Trace McSorley       QB            2                  4.36                        6.36
-442             Michael Woods       WR            2                  4.10                        6.10
-443             Tylan Wallace       WR            1                  5.10                        6.10
-444            Jesper Horsted       TE            1                  4.90                        5.90
-445           Tyrie Cleveland       WR            1                  4.80                        5.80
-446              Chris Conley       WR            2                  3.70                        5.70
-447             Dezmon Patmon       WR            1                  4.40                        5.40
-448               Cole Turner       TE            1                  4.30                        5.30
-449              Nick Vannett       TE            0                  5.20                        5.20
-450              Kyle Rudolph       TE            1                  4.00                        5.00
-451               Case Keenum       QB            4                  0.72                        4.72
-452           KaVontae Turpin       WR            1                  3.60                        4.60
-453             Bryan Edwards       WR            0                  4.50                        4.50
-454               Jerome Ford       RB            4                  0.30                        4.30
-455               Sean McKeon       TE            1                  3.10                        4.10
-456             Brandon Allen       QB            3                  1.08                        4.08
-457                Tony Jones       RB            0                  4.00                        4.00
-458       Lil'Jordan Humphrey       WR            0                  4.00                        4.00
-459                Danny Gray       WR            2                  2.00                        4.00
-460          Stephen Anderson       TE            0                  3.90                        3.90
-461           Jarrett Stidham       QB            1                  2.88                        3.88
-462              Salvon Ahmed       RB            3                  0.70                        3.70
-463            Dennis Houston       WR            0                  3.60                        3.60
-464                 DJ Turner       WR            1                  2.60                        3.60
-465                Penny Hart       WR            1                  2.50                        3.50
-466           Gardner Minshew       QB            2                  1.36                        3.36
-467              Deonte Harty       WR            0                  3.30                        3.30
-468             Jalen Tolbert       WR            0                  3.20                        3.20
-469              Miles Boykin       WR            1                  2.10                        3.10
-470               Keith Smith       RB            1                  2.00                        3.00
-471               Trey Sermon       RB            1                  1.90                        2.90
-472               Drew Sample       TE            1                  1.80                        2.80
-473            Juwann Winfree       WR            0                  2.70                        2.70
-474                Jalen Camp       WR            1                  1.70                        2.70
-475             Tommy Sweeney       TE            1                  1.70                        2.70
-476              Kene Nwangwu       RB            1                  1.60                        2.60
-477              Jacob Harris       TE            1                  1.60                        2.60
-478             Adam Prentice       RB            1                  1.40                        2.40
-479           Braylon Sanders       WR            1                  1.40                        2.40
-480              Mason Kinsey       WR            1                  1.30                        2.30
-481              Nick Mullens       QB            0                  2.04                        2.04
-482              Nate Sudfeld       QB            2                  0.00                        2.00
-483      Ihmir Smith-Marsette       WR            2                 -0.10                        1.90
-484              Snoop Conner       RB            0                  1.70                        1.70
-485         Maurice Alexander       WR            0                  1.70                        1.70
-486                Kylin Hill       RB            1                  0.70                        1.70
-487            Patrick Taylor       RB            1                  0.60                        1.60
-488             Mason Schreck       TE            0                  1.60                        1.60
-489                C.J. Board       WR            0                  1.60                        1.60
-490             Devine Ozigbo       RB            0                  1.50                        1.50
-491               Jason Moore       WR            0                  1.50                        1.50
-492               Brian Hoyer       QB            0                  1.48                        1.48
-493           Richard Rodgers       TE            0                  1.40                        1.40
-494               Jacob Eason       QB            0                  1.36                        1.36
-495             C.J. Beathard       QB            1                  0.24                        1.24
-496                Cody White       WR            0                  1.20                        1.20
-497          Laquon Treadwell       WR            0                  1.10                        1.10
-498              Chase Daniel       QB            1                  0.00                        1.00
-499                Chad Henne       QB            1                  0.00                        1.00
-500           Demetric Felton       RB            0                  0.90                        0.90
-501             Jordan Howard       RB            0                  0.10                        0.10
-502            Michael Carter       RB            0                  0.00                        0.00
-503               Breece Hall       RB            0                  0.00                        0.00
-504            Allen Robinson       WR            0                  0.00                        0.00
-505              Deon Jackson       RB            0                  0.00                        0.00
-506             Justin Watson       WR            0                  0.00                        0.00
-507             Robbie Chosen       WR            0                  0.00                        0.00
-508               Jonnu Smith       TE            0                  0.00                        0.00
-509                David Bell       WR            0                  0.00                        0.00
-510            Desmond Ridder       QB            0                  0.00                        0.00
-511            Connor Heyward       TE            0                  0.00                        0.00
-512              Joshua Dobbs       QB            0                  0.00                        0.00
-513           Darrel Williams       RB            0                  0.00                        0.00
-514                Davis Webb       QB            0                  0.00                        0.00
-515              David Blough       QB            0                  0.00                        0.00
-516                Sam Howell       QB            0                  0.00                        0.00
-517               T.Y. Hilton       WR            0                  0.00                        0.00
-518             Royce Freeman       RB            0                  0.00                        0.00
-519             Freddie Swain       WR            0                  0.00                        0.00
-520                John Brown       WR            0                  0.00                        0.00
-521           Deven Thompkins       WR            0                  0.00                        0.00
-522                Blake Bell       TE            0                  0.00                        0.00
-523               Tyler Badie       RB            0                  0.00                        0.00
-524           Nathan Peterman       QB            0                  0.00                        0.00
-525           Chris Streveler       QB            0                  0.00                        0.00
-526             Charlie Kolar       TE            0                  0.00                        0.00
-527           Jaret Patterson       RB            0                  0.00                        0.00
-528               Tyler Mabry       TE            0                  0.00                        0.00
-529              Racey McMath       WR            0                  0.00                        0.00
-530                Nick Foles       QB            0                  0.00                        0.00
-531            Larry Rountree       RB            0                  0.00                        0.00
-532             Jonathan Ward       RB            0                  0.00                        0.00
-533            Blaine Gabbert       QB            0                  0.00                        0.00
-534           Giovani Bernard       RB            0                  0.00                        0.00
-535            Daylen Baldwin       WR            0                  0.00                        0.00
-536              Dareke Young       WR            0                  0.00                        0.00
-537              Cade Johnson       WR            0                  0.00                        0.00
-538             Pharoh Cooper       WR            0                  0.00                        0.00
-539            Nsimba Webster       WR            0                  0.00                        0.00
-540               Frank Darby       WR            0                  0.00                        0.00
-541              Devin Asiasi       TE            0                  0.00                        0.00
-542               Ty Chandler       RB            0                  0.00                        0.00
-543          Damarea Crockett       RB            0                  0.00                        0.00
-544       Tyron Billy-Johnson       WR            0                  0.00                        0.00
-545            Jeremy Ruckert       TE            0                  0.00                        0.00
-546          Godwin Igwebuike       RB            0                  0.00                        0.00
-547             Erik Ezukanma       WR            0                  0.00                        0.00
-548               Keke Coutee       WR            0                  0.00                        0.00
-549                Kyle Trask       QB            0                  0.00                        0.00
-550           Reggie Bonnafon       RB            0                  0.00                        0.00
-551            Qadree Ollison       RB            0                  0.00                        0.00
-552                Nick Boyle       TE            0                  0.00                        0.00
-553            Jashaun Corbin       RB            0                  0.00                        0.00
-554              Emeka Emezie       WR            0                  0.00                        0.00
-555              Chris Pierce       TE            0                  0.00                        0.00
-556             Alex Erickson       WR            0                  0.00                        0.00
-557              Alex Bachman       WR            0                  0.00                        0.00
-558          Lance McCutcheon       WR            0                  0.00                        0.00
-559            Trenton Cannon       RB            0                  0.00                        0.00
-560             Bryant Koback       RB            0                  0.00                        0.00
-561                Tay Martin       WR            0                  0.00                        0.00
-562              Kirk Merritt       WR            0                  0.00                        0.00
-563            Nikola Kalinic       TE            0                  0.00                        0.00
-564          James Washington       WR            0                  0.00                        0.00
-565               Matt Corral       QB            0                  0.00                        0.00
-566               Davis Cheek       QB            0                  0.00                        0.00
-567              Austin Allen       TE            0                  0.00                        0.00
-568             Jared Pinkney       TE            0                  0.00                        0.00
-569               Rico Dowdle       RB            0                  0.00                        0.00
-570               Josh Gordon       WR            0                  0.00                        0.00
-571             Tanner Conner       TE            0                  0.00                        0.00
-572               Dan Chisena       WR            0                  0.00                        0.00
-573             Britain Covey       WR            0                  0.00                        0.00
-574             Tanner Gentry       WR            0                  0.00                        0.00
-575               Kevin Rader       TE            0                  0.00                        0.00
-576          Cullen Gillaspia       RB            0                  0.00                        0.00
-577            Brandin Bryant       RB            0                  0.00                        0.00
-578            Feleipe Franks       QB            0                  0.00                        0.00
-579              Kenny Yeboah       TE            0                  0.00                        0.00
-580              Malik Turner       WR            0                  0.00                        0.00
-581              Quinton Bell       WR            0                  0.00                        0.00
-582            Matthew Slater       WR            0                  0.00                        0.00
-583           Charlie Woerner       TE            0                  0.00                        0.00
-584                J.P. Holtz       TE            0                  0.00                        0.00
-585                 Jake Funk       RB            0                  0.00                        0.00
-586             Kenjon Barner       RB            0                  0.00                        0.00
-587              Raleigh Webb       WR            0                  0.00                        0.00
-588          Khari Blasingame       RB            0                  0.00                        0.00
-589               Hunter Long       TE            0                  0.00                        0.00
-590             Cody Thompson       WR            0                  0.00                        0.00
-591         Miller Forristall       TE            0                  0.00                        0.00
-592              Matt Barkley       QB            0                  0.00                        0.00
-593               John Lovett       RB            0                  0.00                        0.00
-594          James Winchester       TE            0                  0.00                        0.00
-595           Brandon Zylstra       WR            0                  0.00                        0.00
-596             Tyree Jackson       TE            0                  0.00                        0.00
-597            Brittain Brown       RB            0                  0.00                        0.00
-598                 Ben Mason       RB            0                  0.00                        0.00
-599         Stanley Berryhill       WR            0                  0.00                        0.00
-600            Trinity Benson       WR            0                  0.00                        0.00
-601             Marken Michel       WR            0                  0.00                        0.00
-602             Beau Brinkley       TE            0                  0.00                        0.00
-603        Sandro Platzgummer       RB            0                  0.00                        0.00
-604               Marcus Kemp       WR            0                  0.00                        0.00
-605           Binjimen Victor       WR            0                  0.00                        0.00
-606           Rashard Higgins       WR            0                  0.00                        0.00
-607             Albert Wilson       WR            0                  0.00                        0.00
-608            Stanley Morgan       WR            0                  0.00                        0.00
-609               Justyn Ross       WR            0                  0.00                        0.00
-610            Logan Woodside       QB            0                  0.00                        0.00
-611             Justin Hardee       WR            0                  0.00                        0.00
-612               Jake Tonges       TE            0                  0.00                        0.00
-613             Andre Roberts       WR            0                  0.00                        0.00
-614           La'Mical Perine       RB            0                  0.00                        0.00
-615               Noah Togiai       TE            0                  0.00                        0.00
-616                  Josh Ali       WR            0                  0.00                        0.00
-617                 Tim Boyle       QB            0                  0.00                        0.00
-618            Chester Rogers       WR            0                  0.00                        0.00
+                   Player  Attempts  Success  Percentage
+0              Derek Watt         7        7    1.000000
+1            Dak Prescott        10       11    0.909091
+2               Cam Akers         8        9    0.888889
+3           Kenny Pickett         6        7    0.857143
+4   Clyde Edwards-Helaire         6        7    0.857143
+5             Gus Edwards         6        7    0.857143
+6               Zay Jones         5        6    0.833333
+7          D'Onta Foreman         5        6    0.833333
+8             Mark Ingram         5        6    0.833333
+9             Sony Michel         5        6    0.833333
+10       Justin Jefferson         8       10    0.800000
+11           Travis Kelce         7        9    0.777778
+12         Brian Robinson        14       18    0.777778
+13           Tony Pollard        10       13    0.769231
+14            Jalen Hurts        27       36    0.750000
+15          Ja'Marr Chase         5        7    0.714286
+16              Matt Ryan         5        7    0.714286
+17          Lamar Jackson        14       20    0.700000
+18       Devin Singletary         7       10    0.700000
+19           James Conner        16       23    0.695652
+20           Daniel Jones         9       13    0.692308
+21         Justin Herbert         9       13    0.692308
+22          Derrick Henry        13       19    0.684211
+23        Ezekiel Elliott        17       25    0.680000
+24             Josh Allen        10       15    0.666667
+25        Michael Pittman         4        6    0.666667
+26    JuJu Smith-Schuster         4        6    0.666667
+27       David Montgomery         8       12    0.666667
+28        Jacoby Brissett        12       18    0.666667
+29        Jimmy Garoppolo        10       15    0.666667
+30         Devin Duvernay         4        6    0.666667
+31             Trey Lance         4        6    0.666667
+32          Rachaad White        13       20    0.650000
+33          Miles Sanders        11       17    0.647059
+34         Terry McLaurin         5        8    0.625000
+35         Antonio Gibson         5        8    0.625000
+36         Tyler Allgeier         5        8    0.625000
+37          Tyler Conklin         5        8    0.625000
+38            Kareem Hunt         8       13    0.615385
+39        Jamaal Williams        11       18    0.611111
+40        Jonathan Taylor        12       20    0.600000
+41         Travis Etienne         7       12    0.583333
+42            Tyreek Hill         4        7    0.571429
+43        Trevor Lawrence         8       14    0.571429
+44             Mike Evans         4        7    0.571429
+45         Kenneth Walker         8       14    0.571429
+46           Hayden Hurst         4        7    0.571429
+47          Tyler Huntley         4        7    0.571429
+48          Justin Fields        13       23    0.565217
+49         Russell Wilson         5        9    0.555556
+50          Dameon Pierce        12       22    0.545455
+51         Marcus Mariota         7       13    0.538462
+52              AJ Dillon         7       13    0.538462
+53          Chuba Hubbard         7       13    0.538462
+54             Joe Burrow         4        8    0.500000
+55          Davante Adams         3        6    0.500000
+56            Josh Jacobs        13       26    0.500000
+57            Aaron Jones         7       14    0.500000
+58              Joe Mixon         6       12    0.500000
+59           Kyler Murray         3        6    0.500000
+60          D'Andre Swift         4        8    0.500000
+61            Jeff Wilson         3        6    0.500000
+62         Zander Horvath         3        6    0.500000
+63          Austin Ekeler        12       26    0.461538
+64             Nick Chubb         5       11    0.454545
+65      Leonard Fournette        12       27    0.444444
+66         Ryan Tannehill         3        7    0.428571
+67          Melvin Gordon         3        7    0.428571
+68           Alvin Kamara         5       12    0.416667
+69             Geno Smith         4       10    0.400000
+70        Latavius Murray         8       20    0.400000
+71         James Robinson         5       13    0.384615
+72  Cordarrelle Patterson         4       11    0.363636
+73    Christian McCaffrey         7       21    0.333333
+74      Amon-Ra St. Brown         2        6    0.333333
+75    Rhamondre Stevenson         4       12    0.333333
+76           Najee Harris         4       12    0.333333
+77         Garrett Wilson         2        6    0.333333
+78        Jerick McKinnon         3        9    0.333333
+79          Isiah Pacheco         2        6    0.333333
+80           Rex Burkhead         2        6    0.333333
+81         Michael Burton         2        6    0.333333
+82            Dalvin Cook         4       13    0.307692
+83         Saquon Barkley         2        7    0.285714
+84          Joshua Palmer         2        7    0.285714
+85            Zach Wilson         2       12    0.166667
+86           Kenyan Drake         1        6    0.166667
+87          Chase Edmonds         1        6    0.166667
+88         Raheem Mostert         1        7    0.142857

@@ -4,7 +4,7 @@
 * Timmy Sullivan, tps7@illinois.edu (team captain)
 * Team Name: Group 268
 * Code Repo: https://github.com/tps7/CS410Project
-* Project Video: TBD
+* Project Video: https://drive.google.com/file/d/12-yZfghNUS0bDaqdhkXZNcJVfBT5Mcde/view?usp=sharing
 
 ## Project Overview
 The goal of my project was to find NFL play by play data online and parse the play by play data to get statistical data on the players in that play. Having this data would allow me to calculate custom statistics that can't be found online. The main purpose of this is for analysis in fantasy football and general statistical discovery.
@@ -31,5 +31,12 @@ The instructions for setup are below:
 4. Run analysis.py. Can do this in terminal with "python analysis.py, or in an editor of your choice."
 5. The output should print to the file out.txt. From here you can use the data that has already been parsed to write functions of your own to calculate more statistics, or you can run the five example files I already implemented. 
 
+## How to use
+Once you get the project set up using the project is simple all you need to do is run analysis.py and it will output statistics in the file out.txt. Right now I only have five sample calculations included, however if a user wants to calculate different stats, for example what QB converted the most 3rd down's from 10+ yards away in 2022, the user would need to write another function to do that. This wouldn't be too hard as it would be very similar to the other functions I already wrote in terms of structure. 
+
 ## Project Reflection
-I am very happy with the way my project turned out. I definitly met my goal of being able to calculate advanced statistics from the NFL play by play data. There is however one goal I did not meet. I was unable to acheive 100 % accuracy on my parser in my test cases. This is due to me underestimating the number of edge cases I had to deal with in the project. There are ~40,000 plays in the play by play data, and I estimate there is about 50 very specific edge cases that are causing the errors. By very specific I mean an edge case that only effects one or two plays the entire season. I have very high accuracy on my test cases (upper 90's), so I decided to let those extremly specific edge cases slide and put more focus on the other aspects of my project. The main reason I did this is becasue I don't think missing a couple of plays will have any impact on general takeaways from my statistics.  (i.e. A player may move one or two spots up or down, but overall the player will either be in the towards the top or towards the bottom, so the general takeaways will be the same). Other than this one issue the rest of the project was great. I implmented five example use cases to demonstrate the types of statistical analysis that can be done using the play by play data. 
+I am very happy with the way my project turned out. I definitely met my goal of being able to calculate advanced statistics from the NFL play by play data. There is however one goal I did not meet. I was unable to achieve 100 % accuracy on my parser in my test cases. This is due to me underestimating the number of edge cases I had to deal with in the project. There are ~40,000 plays in the play by play data, and I estimate there is about 50 very specific edge cases that are causing the errors. By very specific I mean an edge case that only effects one or two plays the entire season. I have very high accuracy on my test cases (upper 90's), so I decided to let those extremely specific edge cases slide and put more focus on the other aspects of my project. The main reason I did this is because I don't think missing a couple of plays will have any impact on general takeaways from my statistics.  (i.e. A player may move one or two spots up or down, but overall the player will either be in the towards the top or towards the bottom, so the general takeaways will be the same). Other than this one issue the rest of the project was great. I implemented five example use cases to demonstrate the types of statistical analysis that can be done using the play by play data. \
+
+If anyone has any questions, or they are having trouble accessing or using parts of my project please reach out to me at tps7@illinois.edu. 
+
+
