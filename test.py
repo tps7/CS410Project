@@ -5,12 +5,17 @@ import project as p
 
 
 class TestProject(unittest.TestCase):
+    #testing function
     global test_data 
     global player_data
     test_data = pd.read_csv("player_2022_season.csv")
     player_data = p.calc_stats()
 
     def test_one_player(self):
+        """
+        Tests one specfic player to see if that players weekly score is within an acceptable range.
+        Asserts false if any score from any week falls outside that range.
+        """
         results = test_data.loc[test_data["Player"] == "Patrick Mahomes II"]
         for i in range(1, 16):
             if (results[str(i)][0] == "BYE"):
@@ -25,7 +30,15 @@ class TestProject(unittest.TestCase):
         # print(type(results["1"][0]))
 
     def test_top_50(self):
-        f_players = getFromatted()
+        """
+        Compares the score of the top 50 fantasy scorers on the season from my calculations to the actual values. 
+        Compares the totals for each player every week.
+        Gets the percentage that are correct and asserts false if the percent correct is too low. 
+        """
+        f_players = getFormatted()
+        bound = 2
+        total = 0
+        correct = 0
         for i in range(0, 50):
             curr = test_data.loc[i]
             player = f_players[curr["Player"]]
@@ -36,14 +49,24 @@ class TestProject(unittest.TestCase):
                     expected = 0 #didn't play so no points
                 else:
                     expected = float(curr[str(j)])
-                actual = player_data[player][0].get_score(j)
+                actual = round(player_data[player][0].get_score(j), 1)
                 error = "Week " + str(j) + " " + player + " Expected: " + str(expected) + " Acutal " + str(actual)
-                if not ((expected - 5) <= actual and actual <= (expected + 5)):
+                total += 1
+                if not ((expected - bound) <= actual and actual <= (expected + bound)):
                     print(error)
-                #self.assertTrue((expected - 5) <= actual <= (expected + 5), error)
+                else:
+                    correct += 1
+        correct_percent = correct / total
+        wrong = total - correct
 
-def getFromatted():
-    """Helper function to get formatted version of full player name
+        #self.assertTrue((expected - 5) <= actual <= (expected + 5), error)
+        print(correct, total, correct_percent, wrong)
+        self.assertTrue(correct_percent >= 0.90)
+
+def getFormatted():
+    """
+    Helper function to get formatted version of full player name.
+    Goes through each player in the player_2022_season.csv and gets there formatted name. Used for testing
     """
     df = pd.read_csv("player_2022_season.csv")
     players = df['Player']

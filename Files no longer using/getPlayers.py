@@ -3,6 +3,7 @@ import numpy as np
 from collections import defaultdict
 import player as P
 
+#old file not used anymore
 
 
 def getPlayers():

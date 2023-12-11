@@ -4,12 +4,27 @@ from collections import defaultdict
 import player as P
 import project
 
-global players 
+"""
+This function actual does analysis on the data calculated project.py
+"""
+
+global players #Will hold all the player data calculated in project.py
 players = project.calc_stats()
 
-def most_effective_short_yard():
-    counts = {}
 
+def write_to_file(output, file="out.txt"):
+    """
+    Helper function to write the given dataframe to a file. out.txt is the default file
+    """
+    with open('out.txt', 'w') as outfile:
+        output.to_string(outfile, output.columns)
+
+def most_effective_short_yard():
+    """
+    Calculates the players who had the highest success rate on converting first downs on either 3rd or 4th down. 
+    Only calculates for players with over 5 attempts to make the data better.
+    """
+    lst = []
     for name, pl in players.items():
         if len(pl) < 1:
             continue
@@ -17,11 +32,8 @@ def most_effective_short_yard():
         opps = 0
         succ = 0
         avg = 0
-        curr_player = p.first + " " + p.last
+        curr_player = p.first + " " + p.last #assume no identical first and last names
         for ply in p.plays:
-            if p.name == "D.HENRY":
-                ply.print()
-                print(type(ply.down))
             if (ply.down == 3 or ply.down == 4) and ply.distance <= 2:
                 opps += 1
                 if (ply.first_down_gained):
@@ -30,14 +42,18 @@ def most_effective_short_yard():
             avg = succ / opps
         print(opps, succ, avg)
         if (opps > 5):
-            counts[curr_player] = (succ, opps, avg)
-    
-    output = sorted(counts.items(), key=lambda item: item[1][2], reverse=True)
-    print(output)
+            #counts[curr_player] = (succ, opps, avg)
+            lst.append([curr_player, succ, opps, avg])
+    lst = sorted(lst, key=lambda x: x[3], reverse=True)
+    output = pd.DataFrame(lst, columns=["Player", "Attempts", "Success", "Percentage"])
+    write_to_file(output)
+
 
 def most_chances_inside_10():
-    counts = {}
-
+    """
+    Finds players who have had the most attemps inside the 10 yard line and calculates there scoring percentage. 
+    """
+    lst = []
     for name, pl in players.items():
         if len(pl) < 1:
             continue
@@ -53,14 +69,91 @@ def most_chances_inside_10():
                     succ += 1
         if opps > 0:
             avg = succ / opps
-        print(opps, succ, avg)
         if (opps > 5):
-            counts[curr_player] = (succ, opps, avg)
+            lst.append([curr_player, opps, succ, avg] )
     
-    output = sorted(counts.items(), key=lambda item: item[1][1], reverse=True)
-    print(output)
+    lst = sorted(lst, key=lambda x: x[1], reverse=True)
+    output = pd.DataFrame(lst, columns=["Player", "Attempts", "Success", "Percentage"])
+    write_to_file(output)
+
+def most_touchdowns_in_Q4():
+    """
+    Gets Players who scored the most touchdowns in the 4th quarter throughout the season
+    """
+    lst = []
+    for name, pl in players.items():
+        if len(pl) < 1:
+            continue
+        p = pl[0]
+        tds = 0
+        curr_player = p.first + " " + p.last
+        for ply in p.plays:
+            if ply.quarter == 4:
+                if (ply.td):
+                    tds += 1
+        lst.append([curr_player, tds])
+    
+    lst = sorted(lst, key=lambda x: x[1], reverse=True)
+    output = pd.DataFrame(lst, columns=["Player", "Touchdowns"])
+    write_to_file(output)
+
+
+
+
+def gained_most_firsts(week_start=1, week_end=14):
+    lst = []
+    for name, pl in players.items():
+        if len(pl) < 1:
+            continue
+        p = pl[0]
+        firsts = 0
+        curr_player = p.first + " " + p.last
+        for ply in p.plays:
+            if ply.week >= week_start and ply.week <= week_end:
+                if (ply.first_down_gained):
+                    firsts += 1
+        lst.append([curr_player, firsts])
+
+    
+    lst = sorted(lst, key=lambda x: x[1], reverse=True)
+    output = pd.DataFrame(lst, columns=["Player", "First Downs"])
+    write_to_file(output)
+
+def point_per_first(week_start=1, week_end=14):
+    """
+    Gets the highest scoring players if given a point for first down over the week range
+    """
+    lst = []
+    for name, pl in players.items():
+        if len(pl) < 1:
+            continue
+        p = pl[0]
+        firsts = 0
+        curr_player = p.first + " " + p.last
+        for ply in p.plays:
+            if ply.week >= week_start and ply.week <= week_end:
+                if (ply.first_down_gained):
+                    firsts += 1
+        total_score = 0
+        for i in range(week_start, week_end + 1):
+            total_score += p.get_score(i)
+        score_with_firsts = total_score + firsts
+        lst.append([curr_player, p.pos, firsts, total_score, score_with_firsts])
+
+    lst = sorted(lst, key=lambda x: x[4], reverse=True)
+    output = pd.DataFrame(lst, columns=["Player", "Position", "First Downs", "Fantasy score normal", "Score with point per first"])
+    write_to_file(output)
+
+
+
+
+
+
 
 #most_effective_short_yard()
-most_chances_inside_10()
+#most_chances_inside_10()
+#most_touchdowns_in_Q4()
+#gained_most_firsts(1, 5)
+point_per_first()
 
 
